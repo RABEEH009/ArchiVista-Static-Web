@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArchiVista Studio - Architectural Excellence</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loader">
+            <div class="building-icon">
+                <i class="fas fa-building"></i>
+            </div>
+            <div class="loading-text">ArchiVista Studio</div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-drafting-compass"></i>
+                </div>
+                <h1>ArchiVista Studio</h1>
+            </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span class="hamburger"></span>
+            </label>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link" data-section="home">Home</a>
+                <a href="#services" class="nav-link" data-section="services">Services</a>
+                <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="slide-bg" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <div class="geometric-shapes">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
+                    </div>
+                </div>
+                <div class="slide-content">
+                    <h2 class="slide-title">Architectural Innovation</h2>
+                    <p class="slide-subtitle">Designing spaces that redefine modern living</p>
+                    <a href="#projects" class="cta-button">
+                        <span>Explore Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-bg" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <div class="geometric-shapes">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
+                    </div>
+                </div>
+                <div class="slide-content">
+                    <h2 class="slide-title">Sustainable Design</h2>
+                    <p class="slide-subtitle">Building a greener future with eco-conscious architecture</p>
+                    <a href="#services" class="cta-button">
+                        <span>Our Services</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-bg" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <div class="geometric-shapes">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
+                    </div>
+                </div>
+                <div class="slide-content">
+                    <h2 class="slide-title">Smart Architecture</h2>
+                    <p class="slide-subtitle">Integrating technology with timeless design principles</p>
+                    <a href="#about" class="cta-button">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-navigation">
+            <button class="nav-dot active" data-slide="0"></button>
+            <button class="nav-dot" data-slide="1"></button>
+            <button class="nav-dot" data-slide="2"></button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="150">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="25">0</div>
+                    <div class="stat-label">Awards Won</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Residential Design</h3>
+                    <p>Creating beautiful, functional homes that reflect your lifestyle and personality.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Commercial Architecture</h3>
+                    <p>Innovative commercial spaces that enhance productivity and brand identity.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Sustainable Design</h3>
+                    <p>Eco-friendly solutions that minimize environmental impact while maximizing efficiency.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h3>Urban Planning</h3>
+                    <p>Comprehensive planning solutions for communities and urban development projects.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Renovation</h3>
+                    <p>Transforming existing spaces with modern design and improved functionality.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <h3>3D Visualization</h3>
+                    <p>Bringing your vision to life with stunning 3D renderings and virtual tours.</p>
+                </div>
+            </div>
+            <!-- Service Images -->
+            <div class="service-images">
+                <div class="image-container">
+                    <div class="small-images">
+                        <img src="images/service1.png" alt="Service Image 1" class="service-img small-img">
+                        <img src="images/service2.jpg" alt="Service Image 2" class="service-img small-img">
+                        <img src="images/service3.jpg" alt="Service Image 3" class="service-img small-img">
+                    </div>
+                    <div class="large-image">
+                        <img src="images/service4.jpg" alt="Service Image Large" class="service-img large-img">
+                    </div>
+                </div>
+            </div>
+            <!-- Service Description -->
+            <div class="service-description">
+                <h2 class="section-title description-title">Why Choose ArchiVista Studio</h2>
+                <p class="description-text">At ArchiVista Studio, we blend creativity with functionality to deliver architectural solutions that stand the test of time. Our team of dedicated professionals is committed to transforming your vision into reality with unparalleled expertise.</p>
+                <p class="description-text">We prioritize sustainable practices, ensuring that every project not only meets aesthetic and functional requirements but also contributes positively to the environment. Our innovative designs are tailored to enhance the way you live and work.</p>
+                <p class="description-text">With a legacy of over 150 completed projects and numerous awards, ArchiVista Studio is your trusted partner in creating spaces that inspire. Let us build your future with designs that are both timeless and forward-thinking.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="sustainable">Sustainable</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="residential">
+                    <div class="project-image" style="background-image: url('images/project1.jpg');">
+                        <div class="project-overlay">
+                            <h3>Modern Villa</h3>
+                            <p>Contemporary residential design</p>
+                            <button class="view-project">View Project</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="commercial">
+                    <div class="project-image" style="background-image: url('images/project2.jpg');">
+                        <div class="project-overlay">
+                            <h3>Office Complex</h3>
+                            <p>Innovative workspace design</p>
+                            <button class="view-project">View Project</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="sustainable">
+                    <div class="project-image" style="background-image: url('images/project3.jpeg');">
+                        <div class="project-overlay">
+                            <h3>Eco Building</h3>
+                            <p>Sustainable architecture</p>
+                            <button class="view-project">View Project</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="residential">
+                    <div class="project-image" style="background-image: url('images/project4.jpg');">
+                        <div class="project-overlay">
+                            <h3>Urban Apartment</h3>
+                            <p>Modern living space</p>
+                            <button class="view-project">View Project</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="commercial">
+                    <div class="project-image" style="background-image: url('images/project5.jpg');">
+                        <div class="project-overlay">
+                            <h3>Shopping Center</h3>
+                            <p>Retail space design</p>
+                            <button class="view-project">View Project</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="sustainable">
+                    <div class="project-image" style="background-image: url('images/project6.jpg');">
+                        <div class="project-overlay">
+                            <h3>Green Tower</h3>
+                            <p>Environmentally conscious design</p>
+                            <button class="view-project">View Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <h2 class="section-title">Our Team</h2>
+            <div class="team-image">
+                <img src="images/team.jpeg" alt="Our Team" class="team-img">
+            </div>
+            <div class="team-description">
+                <p>Our team at ArchiVista Studio comprises passionate architects, designers, and engineers who bring diverse expertise to every project. With a shared commitment to excellence, we collaborate closely with clients to deliver innovative and sustainable solutions. Our collective experience ensures that every design is crafted with precision, creativity, and a deep understanding of our clients' needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About ArchiVista Studio</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>Founded in 2010</h3>
+                                <p>ArchiVista Studio was established with a vision to create architectural excellence that harmonizes form, function, and sustainability.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>Innovative Approach</h3>
+                                <p>We embrace cutting-edge technology and sustainable practices to deliver designs that are both aesthetically pleasing and environmentally responsible.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>Global Recognition</h3>
+                                <p>Our work has been recognized internationally, receiving numerous awards for design excellence and sustainable innovation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <img src="images/about-team.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <p>info@archivista.studio</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Address</strong>
+                                <p>123 Design Avenue<br>Architecture City, AC 12345</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <h3>Send a Message</h3>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ArchiVista Studio</h3>
+                    <p>Creating innovative, sustainable designs that inspire and endure. We are committed to excellence in every project we undertake.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Residential Design</a></li>
+                        <li><a href="#">Commercial Architecture</a></li>
+                        <li><a href="#">Sustainable Design</a></li>
+                        <li><a href="#">Urban Planning</a></li>
+                        <li><a href="#">3D Visualization</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 ArchiVista Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
